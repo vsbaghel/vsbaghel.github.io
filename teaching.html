@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Teaching | Dr. Vivek S. Baghel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+<link rel="stylesheet" href="style/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Georgia", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="publications.html" class="w3-bar-item w3-button w3-theme-l1"><b>Teaching</b></a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 " id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><!--img class="w3-border" style="width: 160px; height: 200px; align: center;" alt="" src="images/image3.jpg" align="center"--> </h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="education.html">Education</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="experience.html">Experience</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="teaching.html">Teaching</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="publications.html">Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="professional.html">Professional Activities</a>
+  <!--a class="w3-bar-item w3-button w3-hover-black" href="blogs.html">Blogs</a-->
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main w3-vivfont" style="margin-left:300px; margin-right:150px">
+
+  <div class="w3-row w3-padding-64-viv">
+    <div class="w3-container">
+		<h3><u><b>At CSE, RGIPT Jais:</b></u></h3><!--br-->
+			<hr style="width: auto; height: 1px;">
+			<!-- Semesters-->
+			<big><span style="color: #990000;">Odd Semester [AY2025-26]:</span></big>
+				      
+			<ol style="text-align: justify;">
+			<li> CS211: Data Structures</li>
+			<li> CS211L: Data Structures Lab</li>
+			
+			</ol>
+							 
+			<hr style="width: auto; height: 1px;">
+			<big><span style="color: #990000;">Even Semester [AY2024-25]:</span></big>
+				      
+			<ol style="text-align: justify;">
+			<li> CS101: Computer Programming</li>
+			<li> CS101L: Computer Programming Lab</li>
+			<li> CS102: Computer Science Engineering Practices</li>
+			
+			
+			</ol>
+							 
+			<hr style="width: auto; height: 1px;">
+			
+			<big><span style="color: #990000;">Odd Semester [AY2024-25]:</span></big>
+				      
+			<ol style="text-align: justify;">
+			<li> CS231: Graphics and Visual Computing</li>
+			<li> CS231L: Graphics and Visual Computing Lab</li>
+			<li> CS571: Reinforcement Learning</li>
+			<li> CS571L: Reinforcement Learning Lab</li>
+				
+			</ol>
+							 
+			<hr style="width: auto; height: 1px;">
+			
+			<big><span style="color: #990000;">Other engagements in non-CSE courses:</span></big>
+				      
+			<ol style="text-align: justify;">
+			<li> Seminar </li>
+			<li> Universal Human Values</li>
+			<li> Community Internship</li>
+				
+			</ol>
+							 
+			<hr style="width: auto; height: 1px;"><br>
+		
+			
+			
+			
+	</div>
+    
+  </div>
+  
+  
+
+  <div class="footer">
+    <div class="w3-row w3-theme-l1 w3-tiny">
+      <table class="w3-table">
+        <tr>
+          <!--td>&copy;Vivek Singh Baghel, 2021</td-->
+          <td style="text-align: right;">Page generated using w3.css</td>
+        </tr>
+      </table>
+      
+    </div>
+  </div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
